@@ -1,0 +1,8 @@
+.track-container {
+    background: lightgray 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}

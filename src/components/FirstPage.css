@@ -1,0 +1,82 @@
+@import url('https://fonts.cdnfonts.com/css/kaffe');
+@media screen and (max-width: 728px) {
+    .first-container {
+        background: lightgray 50%;
+    } 
+    .logo {
+        font-family: 'Kaffe', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        color: #3972FE;
+        padding-right: 20px;
+        padding: 10px;
+    }
+    .logo1 {
+        font-family: 'Kaffe', sans-serif;                                        
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+        padding-right: 180px;
+    }
+    
+    .button-box {
+        /* width: 390px;
+        height: 364px; */
+        flex-shrink: 0;
+        border-radius: 80px 0px 0px 0px;
+        background: #FFF;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.04);
+        margin-top: -380px;
+        padding: 79px 43px;
+        
+        }
+    .always {
+        color: var(--Black-color, #1E1F4B);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: SF UI  Text;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 142.857% */
+        letter-spacing: 0.5px;
+    }
+    .span {
+        color: var(--Main-Color, #3972FE);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: SF UI  Text;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.5px;
+        text-transform: lowercase;
+    }
+    .devi {
+        color: #2E3E5C;
+        font-family: SF UI  Text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.5px;
+    }
+    .skip {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 40px 0px;        
+    }
+    .skip p {
+        color: #2E3E5C;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: SF UI  Text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.5px;
+        padding-top: 18px;
+    }
+}
