@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     border: 290px;
+    margin: auto;
+    margin-top: 200px;
+    padding-bottom: 40px;
+    padding-top: 30px;
 }
 .head {
     display: flex;
@@ -83,7 +87,7 @@
     font-weight: 700;
     margin-top: 2px;
 }
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 748px) {
     .container {
         background: lightgray 50%;
         display: flex;
@@ -134,15 +138,16 @@
        gap: 30px;
     }
     .share, .track-pic {
-        width: 238vw;
-        height: 180vh;
+        width: 80vw;
+        height: 40vh;
         flex-shrink: 0;
         border-radius: 32px;
         background: #F4F4FD;
     }
     .share > img, .track-pic> img{
-        width: 117vw;
-        height: 150vh;
+        width: 102vw;
+        height: 35vh;
+        margin-left: -40px;
         /* margin-top: -50px; */
     }
     .share p {
@@ -162,6 +167,9 @@
         font-style: normal;
         font-weight: 700;
         margin-top: 2px;
+    }
+    .menu {
+        display: flex;
     }
    
 }

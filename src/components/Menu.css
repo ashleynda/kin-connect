@@ -1,23 +1,45 @@
-.menu {
-    width: 390.5px;
-    height: 82.445px;
-    flex-shrink: 0;
-    fill: #FFF;
-    filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.08));
+ @media screen and (max-width: 748px) {
+    .menu {
+        width: 90vw;
+        height: 10vh;
+        fill: #FFF;
+        filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.08));
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .menu-con {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 55px;
+        margin-top: 24px;
+    }
+    /* .menu {
+        width: 4vw;
+        height: 15vh;
+        fill: #FFF;
+        filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.08));
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 73px;
+    }
+    .menu-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -1px;     
+        padding: 0px 18px;
+        margin-right: 90px;
+
+    }
+    .menu1 {
+        color: var(--Black-color, #1E1F4B);
+        font-family: SF UI  Text;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.24px;
+    } */
 }
-.menu-con {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -70px;     
-    padding: 0px 18px;
-}
-menu1 {
-    color: var(--Black-color, #1E1F4B);
-    font-family: SF UI  Text;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.24px;
-        }

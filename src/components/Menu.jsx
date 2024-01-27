@@ -9,30 +9,29 @@ import Vector2 from '../assets/Vector2.png'
 const Menu = () => {
   return ( 
     <div className='menu'>
-    <img src={Vector1} />
-        <div className='menu-con'>
+      <img src={Vector1} />
+      <div className='menu-con'>
         <div className='menu1'>
-        <img src={Home} />
-        <p>Home</p>
+          <img src={Home} />
+          <p>Home</p>
         </div>
 
         <div className='menu1'>
-        <img src={location} />
-        <p>Map</p>
+          <img src={location} />
+          <p>Map</p>
         </div>
 
 
         <div className='menu1'>
-        <img src={user} />
-        <p>Profile</p>
+          <img src={user} />
+          <p>Profile</p>
         </div>
 
         <div className='menu1'>
-        <img src={Vector2} />
-        <p>Settings</p>
+          <img src={Vector2} />
+          <p>Settings</p>
         </div>
-        </div>
-      
+      </div>
     </div>
   )
 }

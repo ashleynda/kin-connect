@@ -44,14 +44,12 @@ const Signin = () => {
       </form>
 
     
-      {/* <div className='options'> */}
         <p className='option'>or login with</p>
         <div className="icon-link">
           <img className='link' src={akar} alt="" />
           <img className='link' src={cib_facebook} alt="" />
         </div>
         <p className='yet' >Don't have an account yet?<span className='reg' >Register</span></p>
-      {/* </div> */}
     </div>
   );
 };

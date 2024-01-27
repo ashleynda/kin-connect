@@ -1,9 +1,10 @@
 .login-page {
     margin: auto;
     margin-top: 200px;
-    /* padding-bottom: 30px; */
     background: lightgray 50%;
-    padding: 200px;
+    padding-bottom: 90px;
+    padding-top: 20px;
+    width: 98vw;
 }
 .signin {
     /* display: flex;
@@ -55,8 +56,8 @@
     line-height: normal;
     border-radius: 10px;
     background-color: white;
-    width: 335px;
-    height: 50px;
+    width: 22vw;
+    height: 6vh;
     box-sizing:border-box;
     padding-left: 2.2rem;
     border: none;   
@@ -71,8 +72,8 @@
     line-height: normal;
     border-radius: 10px;
     background: white;
-    width: 335px;
-    height: 50px;
+    width: 22vw;
+    height: 6vh;
     box-sizing:border-box;
     padding-left: 2.2rem;
     border: none;
@@ -113,7 +114,7 @@
 }
 .log-button {
     display: flex;
-    width: 335px;
+    width: 22vw;
     padding: 10px 12px 10px 10px;
     justify-content: center;
     align-items: center;
@@ -127,7 +128,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 25px;
+    margin-left: 10px;
     cursor: pointer;
     border: none;
 }
@@ -167,19 +168,20 @@
     font-weight: 500;
     line-height: normal;
 }
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 748px) {
     .login-page {
         margin: auto;
         margin-top: 200px;
         padding-bottom: 30px;
         background: lightgray 50%;
+        
     }
     .signin {
-        /* display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        gap: 60px; */
+        gap: 60px;
         color: #3972FE;
         font-size: 48px;
         font-weight: 700;
@@ -224,8 +226,8 @@
         line-height: normal;
         border-radius: 10px;
         background-color: white;
-        width: 335px;
-        height: 50px;
+        width: 85vw;
+        height: 6vh;
         box-sizing:border-box;
         padding-left: 2.2rem;
         border: none;   
@@ -240,8 +242,8 @@
         line-height: normal;
         border-radius: 10px;
         background: white;
-        width: 335px;
-        height: 50px;
+        width: 85vw;
+        height: 6h;
         box-sizing:border-box;
         padding-left: 2.2rem;
         border: none;
@@ -282,7 +284,7 @@
     }
     .log-button {
         display: flex;
-        width: 335px;
+        width: 85vw;
         padding: 10px 12px 10px 10px;
         justify-content: center;
         align-items: center;
@@ -296,17 +298,18 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        margin-left: 25px;
+        margin-left: 8px;
         cursor: pointer;
         border: none;
     }
     .option {
         color: #2E3E5C;
         font-family: Exo;
-        font-size: 14px;
+        font-size: px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        
     }
     .icon-link {
         display: flex;
