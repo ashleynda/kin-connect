@@ -84,6 +84,7 @@
 
 
 import { useEffect } from 'react';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const Map = () => {
   useEffect(() => {
@@ -103,9 +104,9 @@ const Map = () => {
       document.head.appendChild(script);
     };
 
-    activateLink(
-      'https://maps.googleapis.com/maps/api/js?key=AIzaSyDGucPQopQX5V6k-ndIaixUAyFVvkD45zU&callback=initMap'
-    );
+    // activateLink(
+    //   'https://maps.googleapis.com/maps/api/js?key=AIzaSyDGucPQopQX5V6k-ndIaixUAyFVvkD45zU&callback=initMap'
+    // );
 
    const initMap = () => {
   const mapDiv = document.getElementById('map');
@@ -182,4 +183,4 @@ const Map = () => {
   // Rest of your component code
 };
 
-export default Map;
+export default GoogleMap;

@@ -5,7 +5,7 @@ import Signin from './components/Signin';
 import HomePage from './components/HomePage';
 import Tracking from './components/Tracking';
 import Token from './components/Token';
-import Map from './components/Map';
+import GoogleMap from './components/Map';
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
     <HomePage />
     <Tracking />
     <Token />
-    <Map/>
+    {/* <GoogleMap/> */}
     
     </div>
   );
