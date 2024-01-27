@@ -4,11 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 290px;
-    margin: auto;
+    /* border: 290px; */
+    /* margin: auto; */
     margin-top: 200px;
-    padding-bottom: 40px;
-    padding-top: 30px;
+     padding-bottom: 40px;
+    /* padding-top: 30px;  */
 }
 .head {
     display: flex;

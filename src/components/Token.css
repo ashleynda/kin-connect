@@ -48,8 +48,8 @@
         padding: 20px;        
     }
     .tok {
-        width: 280px;
-        height: 20px;
+        width: 80vw;
+        height: 5vh;
     }
     .track1 {
         width: 150px;
@@ -57,7 +57,10 @@
         border-radius: 25px;
         border: none;
         background-color: #3972FE;
-        color: #1E1F4B;
-        margin-top: 40px;       
+        color: white;
+        margin-top: 40px;  
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;     
     }
 }

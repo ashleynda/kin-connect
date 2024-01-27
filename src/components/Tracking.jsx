@@ -8,13 +8,13 @@ const Tracking = () => {
         <div className='track-container'>
             <div>
                 <p className='share-with'>Share with: </p>
-                <textarea type='numbers' placeholder='phone number' rows={4} cols={70}></textarea>
+                <textarea type='numbers' placeholder='phone number' rows={4} cols={42}></textarea>
             </div>
-            <div>
-                <button className='generate'>Generate Token</button>
-                <p className='token-response'>Token: </p>
+            <div className='token-div'>
+              <button className='generate'>Generate Token</button>
+              <p className='token-response'>Token: </p>
+              <Menu />
             </div>
-            <Menu />
         </div>
       
     </div>
