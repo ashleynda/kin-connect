@@ -1,84 +1,185 @@
-import { useState, useEffect} from 'react';
-import { withGoogleMap, GoogleMap, Marker } from '@react-google-maps';
+// import { useState, useEffect} from 'react';
+// // import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
 
 
-const Map = withGoogleMap((props) => (
-  <GoogleMap
-    defaultZoom={15}
-    defaultCenter={props.center}
-  >
-    <Marker position={props.center} />
-  </GoogleMap>
-));
+// // import { withGoogleMap } from 'react-google-maps';
 
-const GoogleMapComponent= ()=> {
-  const[location, setLocation]=useState(null);
+// const Map = (() => {
+  
 
 
+//   useEffect(() => {
+
+//     let activateLink = (link) => {
+//       const script = document.createElement('script');
+//       script.src = link;
+//       document.head.appendChild(script);
+//    }
+
+//    activateLink("https://maps.googleapis.com/maps/api/js?key=AIzaSyDGucPQopQX5V6k-ndIaixUAyFVvkD45zU&callback=getCurrentLocation");
+
+//   }, [])
+
+  
+
+//   function showLocation(position) {
+//     const latitude = position.coords.latitude;
+//     const longitude = position.coords.longitude;
+
+//     const locationElement = document.getElementById('location');
+//     locationElement.innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
+//     initMap(latitude, longitude);
+//   }
+
+//   const showError = (error) => {
+//     const locationElement = document.getElementById('location');
+//     locationElement.innerHTML = `Error getting location: ${error.message}`;
+//   };
+
+//   function getCurrentLocation() {
+//     if (navigator.geolocation) {
+//       navigator.geolocation.getCurrentPosition(showLocation, showError);
+//     } else {
+//       alert('Geolocation is not supported by your browser');
+//     }
+//   }
+
+//   function initMap(lat, long) {
+//     try {
+//       const mapDiv = document.getElementById('map');
+
+//       var myLatlng = new window.google.maps.LatLng(lat, long);
+//       var mapOptions = {
+//         zoom: 18,
+//         center: myLatlng,
+//         mapTypeId: 'roadmap',
+//       };
+//       var map = new google.maps.Map(mapDiv, mapOptions);
+
+//       const marker = new window.google.maps.Marker({
+//         position: { lat: lat, lng: long },
+//         map: map,
+//         title: 'User Location',
+//       });
+
+//     } catch (error) {
+//       console.error('Error:', error);
+//     }
+//   }
+
+
+
+//   // Return JSX to render the map component
+//   return (
+//     <div>
+//       <div id="location"></div>
+//       <div id="map"></div>
+//     </div>
+//   );
+
+// });
+
+// export default Map;
+
+
+import { useEffect } from 'react';
+
+const Map = () => {
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const { latitude, longitude}= position.coords;
-        setLocation({lat: latitude, lng: longitude});
-      },
-      (error)=> {
-        console.error('Error getting location:',error.message);
-      }
-    );
-  }, []);
+    
+    const activateLink = async(link) => {
+      const script = await document.createElement('script');
+      script.src = link;
+      script.async = true;
+      script.defer = true;
 
-  return (
-    <div style={{ height: '400px',width:'100%'}}>
-      {location && (
-        <Map
-          containerElement={<div style={{ height:'100%'}}/>}
-          MapElement={<div style={{height:'100%'}}/>}
-          center={location}
-        />
-      )}
-    </div>
-  );
+      // Callback function to execute when the script is loaded
+      script.onload = () => {
+        // Your logic to initialize the map or call other functions
+        getCurrentLocation();
+      };
+
+      document.head.appendChild(script);
+    };
+
+    activateLink(
+      'https://maps.googleapis.com/maps/api/js?key=AIzaSyDGucPQopQX5V6k-ndIaixUAyFVvkD45zU&callback=initMap'
+    );
+
+   const initMap = () => {
+  const mapDiv = document.getElementById('map');
+  if (mapDiv) {
+    const myLatlng = new window.google.maps.LatLng(6.1723, 3.0965 );
+    const mapOptions = {
+      zoom: 18,
+      center: myLatlng,
+      mapTypeId: 'roadmap',
+    };
+    const map = new window.google.maps.Map(mapDiv, mapOptions);
+    map.setMapTypeId('roadmap');
+
+    const marker = new window.google.maps.Marker({
+      position: { lat: 6.1723 , lng: 3.0965 },
+      map: map,
+      title: 'User Location',
+    });
+  }
 };
 
-
-export default GoogleMapComponent
-
+  }); // Empty dependency array means this effect runs once on mount
 
 
+  function showLocation(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
 
-
-
-
-
-
-  /* {
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_APIKEY,
-    libraries,
-  });
-
-    
-
-
-  if (loadError) {
-    return <div>Error loading maps</div>;
+    const locationElement = document.getElementById('location');
+    locationElement.innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
   }
 
-  if (!isLoaded) {
-    return <div>Loading maps</div>;
+  const showError = (error) => {
+    const locationElement = document.getElementById('location');
+    locationElement.innerHTML = `Error getting location: ${error.message}`;
+  };
+
+  function getCurrentLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showLocation, showError);
+    } else {
+      alert('Geolocation is not supported by your browser');
+    }
   }
+
+  // Function to initialize the map
+  // const initMap = () => {
+  //   const mapDiv = document.getElementById('map');
+  //   if (mapDiv) {
+  //     const myLatlng = new window.google.maps.LatLng(/* Your latitude and longitude values */);
+  //     const mapOptions = {
+  //       zoom: 18,
+  //       center: myLatlng,
+  //       mapTypeId: 'roadmap',
+  //     };
+  //     const map = new window.google.maps.Map(mapDiv, mapOptions);
+  //     map.setMapTypeId('roadmap');
+
+  //     const marker = new window.google.maps.Marker({
+  //       position: { lat: 6.1723 , lng: 3.0965 },
+  //       map: map,
+  //       title: 'User Location',
+  //     });
+  //   }
+  // };
 
   return (
-    <div>
-      <GoogleMap
-        mapContainerStyle={mapContainerStyle}
-        zoom={10}
-        center={center}
-      >
-        <Marker position={center} />
-      </GoogleMap>
-    </div>
-  );
-}; */
+        <div>
+          <div id="location"></div>
+          <div id="map"></div>
+        </div>
+      );
 
+  // Rest of your component code
+};
+
+export default Map;

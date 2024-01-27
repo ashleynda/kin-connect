@@ -7,7 +7,7 @@ import user from '../assets/user (8) 1.png'
 import Vector2 from '../assets/Vector2.png'
 
 const Menu = () => {
-  return (
+  return ( 
     <div className='menu'>
     <img src={Vector1} />
         <div className='menu-con'>

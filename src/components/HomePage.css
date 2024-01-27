@@ -1,3 +1,88 @@
+.container5 {
+    background: lightgray 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 290px;
+}
+.head {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+.welcome {
+    color: var(--Main-color, #1E1F4B);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF UI  Text;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32%; /* 177.778% */
+    letter-spacing: 0.5px;
+
+    > img {
+        
+
+    }
+}
+.track {
+    color: var(--Main-color, #1E1F4B);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "SF UI  Text";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40%;
+    letter-spacing: 0.5px;
+
+}
+.keep {
+    color: var(--Main-Color, #3972FE);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "SF UI  Text";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40%; /* 166.667% */
+    letter-spacing: 0.5px;
+}
+.share-div {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+.share, .track-pic {
+    width: 20vw;
+    height: 60vh;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #F4F4FD;
+}
+.share > img, .track-pic> img{
+    width: 20vw;
+    height: 50vh;
+    /* margin-top: -50px; */
+}
+.share p {
+    color: var(--Main-color, #1E1F4B);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF UI  Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 2px;
+}
+.track-pic p {
+    color: var(--Main-color, #1E1F4B);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF UI  Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 2px;
+}
 @media screen and (max-width: 728px) {
     .container {
         background: lightgray 50%;
@@ -19,7 +104,7 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px; /* 177.778% */
+        line-height: 32%; /* 177.778% */
         letter-spacing: 0.5px;
     }
     .track {
@@ -29,7 +114,7 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px;
+        line-height: 40%;
         letter-spacing: 0.5px;
 
     }
@@ -40,7 +125,7 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 40px; /* 166.667% */
+        line-height: 40%; /* 166.667% */
         letter-spacing: 0.5px;
     }
     .share-div {
@@ -49,15 +134,15 @@
        gap: 30px;
     }
     .share, .track-pic {
-        width: 238px;
-        height: 180px;
+        width: 238vw;
+        height: 180vh;
         flex-shrink: 0;
         border-radius: 32px;
         background: #F4F4FD;
     }
     .share > img, .track-pic> img{
-        width: 117px;
-        height: 150px;
+        width: 117vw;
+        height: 150vh;
         /* margin-top: -50px; */
     }
     .share p {

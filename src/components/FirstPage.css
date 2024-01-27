@@ -1,51 +1,158 @@
 @import url('https://fonts.cdnfonts.com/css/kaffe');
-@media screen and (max-width: 728px) {
+.first-container {
+    background: lightgray 50%;
+    /* padding: 10px 240px;
+    border: 90px; */
+
+} 
+.comapny-name {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: fit-content;
+}
+.logo {
+    font-family: 'Kaffe', sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    font-style: normal;
+    color: #3972FE;
+    margin-bottom: 90px;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    
+    
+    /* padding-right: 20px; */
+    /* padding: 10px; */
+   
+    
+}
+.logo1 {
+    font-family: 'Kaffe', sans-serif;                                        
+    font-size: 150px;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    /* padding-right: 180px; */
+}
+
+.button-box {
+    /* width: 390px;
+    height: 364px; */
+    flex-shrink: 0;
+    border-radius: 80px 0px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.04);
+    /* margin-top: -380px; */
+    padding: 65px 200px;  
+    
+}
+.always {
+    color: var(--Black-color, #1E1F4B);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF UI  Text;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 142.857% */
+    letter-spacing: 0.5px;
+}
+.people {
+    color: var(--Main-Color, #3972FE);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF UI  Text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+}
+.devi {
+    color: #2E3E5C;
+    font-family: SF UI  Text;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+}
+.skip {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 40px 0px; 
+    
+    >img{
+        margin-left: 470px;
+    }
+}
+.skip p {
+    display: none;
+    color: #2E3E5C;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: SF UI  Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+    padding-top: 18px;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 748px) {
     .first-container {
         background: lightgray 50%;
-    } 
+        width: 204vw;
+    }
+    #bg-image {
+        width: 204vw;
+        height: 150vh;
+    }
+    .comapny-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
     .logo {
-        font-family: 'Kaffe', sans-serif;
-        font-size: 25px;
+        font-size: 80px;
         font-weight: 400;
         font-style: normal;
-        color: #3972FE;
-        padding-right: 20px;
-        padding: 10px;
+        margin-bottom: 1080px;
+        margin-left: -790px;
+        
     }
     .logo1 {
-        font-family: 'Kaffe', sans-serif;                                        
-        font-size: 25px;
+        font-size: 50px;
         font-weight: 400;
         font-style: normal;
-        color: black;
-        padding-right: 180px;
     }
-    
     .button-box {
-        /* width: 390px;
-        height: 364px; */
+        width: 390px;
+        height: 364px; 
         flex-shrink: 0;
         border-radius: 80px 0px 0px 0px;
         background: #FFF;
         box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.04);
-        margin-top: -380px;
-        padding: 79px 43px;
-        
-        }
+        margin-top: -240px; 
+        /* padding: 65px 150px;           */
+        position: absolute;
+    }
     .always {
         color: var(--Black-color, #1E1F4B);
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: SF UI  Text;
+        font-family: "SF UI  Text";
         font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: 40px; /* 142.857% */
         letter-spacing: 0.5px;
     }
-    .span {
+    .people {
         color: var(--Main-Color, #3972FE);
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: SF UI  Text;
+        font-family: "SF UI  Text";
         font-size: 28px;
         font-style: normal;
         font-weight: 700;
@@ -53,30 +160,14 @@
         letter-spacing: 0.5px;
         text-transform: lowercase;
     }
-    .devi {
-        color: #2E3E5C;
-        font-family: SF UI  Text;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px; /* 150% */
-        letter-spacing: 0.5px;
-    }
     .skip {
         display: flex;
-        align-content: center;
-        justify-content: space-between;
-        padding: 40px 0px;        
-    }
-    .skip p {
-        color: #2E3E5C;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: SF UI  Text;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px; /* 150% */
-        letter-spacing: 0.5px;
-        padding-top: 18px;
+        align-items: center;
+        justify-content: center;
+
+        > img {
+            margin-top: -30px;            
+            margin-left: 30px;
+        }
     }
 }

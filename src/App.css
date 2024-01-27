@@ -28,13 +28,14 @@
   color: #61dafb;
 }
 .bg-image {
-  background-image: url("./assets/3d\ 2.png");
+  background-image: url("./assets/bg_image.png");
   /* background-size: cover; */
   background-repeat: no-repeat;
-  height: 100vh;
-  margin-top: -40px;
-  font-size: 50px;
-}
+  /* height: 100vh; */
+  /* margin-top: -40px; */
+  /* font-size: 50px; */
+  /* z-index: 100; */
+} 
 
 @keyframes App-logo-spin {
   from {

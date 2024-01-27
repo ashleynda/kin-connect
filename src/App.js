@@ -7,16 +7,28 @@ import Tracking from './components/Tracking';
 import Token from './components/Token';
 import Map from './components/Map';
 
+
 function App() {
   return (
     <div className="App">
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<FirstPage />}/>
+          <Route path='signup' element={<Signup />}/>
+          <Route path='signin' element={<Signin />}/>
+          <Route path='homepage' element={<HomePage />}/>
+          <Route path='tracking' element={<Tracking />}/>
+          <Route path='token' element={<Token />}/>
+          <Route path='map' element={<Map />}/>
+        </Routes>
+      </BrowserRouter> */}
     <FirstPage />
     <Signup />
     <Signin />
     <HomePage />
     <Tracking />
     <Token />
-    <Map />
+    <Map/>
     
     </div>
   );

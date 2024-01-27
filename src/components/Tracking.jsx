@@ -7,12 +7,12 @@ const Tracking = () => {
     <div>
         <div className='track-container'>
             <div>
-                <p>Share with: </p>
-                <textarea type='numbers' placeholder='phone number' rows={4} cols={40}></textarea>
+                <p className='share-with'>Share with: </p>
+                <textarea type='numbers' placeholder='phone number' rows={4} cols={70}></textarea>
             </div>
             <div>
-                <button>Generate Token</button>
-                <p>Token: </p>
+                <button className='generate'>Generate Token</button>
+                <p className='token-response'>Token: </p>
             </div>
             <Menu />
         </div>

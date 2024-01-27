@@ -16,20 +16,20 @@ const Signup = () => {
   return (
     <div className='container'>
         <div className="header">
-        <div className="cancel"><button id="cancel-login" >X</button></div>
-          <div className="text">Sign Up</div>
-          <div className="underline"></div>
+            <div className="cancel"><button id="cancel-login" >X</button></div>
+            <div className="text">Sign Up</div>
+            <div className="underline"></div>
         </div>
         <div className="inputs">
             <form className="field" id="register-part">
                 {/* <h3 id="signup-response">{signup}</h3> */}
                 <div className="input">
-                <img src={gg_profile} alt="" />
-                <input
+                    <img src={gg_profile} alt="" />
+                    <input
                     type="text"
                     placeholder="Username"
                     id="username"
-                />
+                    />
                 </div>
                 <div className="input">
                     <img src={icons8} alt="" />

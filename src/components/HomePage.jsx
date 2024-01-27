@@ -9,7 +9,7 @@ import {FaPhone} from 'react-icons/fa'
 const HomePage = () => {
   return (
 
-    <div className='container'> 
+    <div className='container5'> 
       <header className='head'>
         <p className='welcome'>Welcome Back</p>
         <img src={magGlass} alt='' />
